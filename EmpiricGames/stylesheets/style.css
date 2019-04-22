@@ -2111,6 +2111,10 @@ ul.portfolio-filter.style3 > li a:hover:after, ul.portfolio-filter.style3 > li.a
 .planding-isotope .plan-item .box a:hover:before, .planding-isotope .plan-item .box a:hover:after   {
 	opacity: 1;
 	visibility: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
 }
 
 .blog_column_metro.grid-metro .post .content-post::before, .blog_carousel_metro .post:hover .content-post::before, .flat-video.bg-gradient a:before,
@@ -2247,7 +2251,7 @@ ul.portfolio-filter.style3 > li a:hover:after, ul.portfolio-filter.style3 > li.a
 /* Home Digital Agency
 -------------------------------------------------------------- */
 .tparrows-none .tparrows { display: none; }
-.home-agency-s2 .blog_column_metro.grid-metro .post .content-post { padding: 30.2% 0 0; }
+/* .home-agency-s2 .blog_column_metro.grid-metro .post .content-post { padding: 30.2% 0 0; } */
 .home-agency-s2 .blog_column_metro.grid-metro .post h2.title-post { margin-bottom: 13px; }
 .home-agency-s2 .owl-theme .owl-dots { padding-top: 57px; }
 .color-dots.owl-theme .owl-dots .owl-dot.active span, .color-dots.owl-theme .owl-dots .owl-dot:hover span { background-color: #fff; border-color: #fff; }
@@ -2424,7 +2428,7 @@ ul.portfolio-filter.style3 > li a:hover:after, ul.portfolio-filter.style3 > li.a
 .section-text-box .post .content-post p { margin-bottom: 21px; }
 .section-text-box .post .content-post .readmore { letter-spacing: 0; }
 .style-post-agency .blog_column_metro.grid-metro .post .content-post::before { background-image: none; }
-.home-basic-agency-s4 .blog_column_metro.grid-metro .post .content-post { padding: 30.2% 0 0; }
+/* .home-basic-agency-s4 .blog_column_metro.grid-metro .post .content-post { padding: 30.2% 0 0; } */
 .home-bright-acgency-s5 .testimonials .name { font-weight: 500; font-size: 22px; letter-spacing: 0; margin-bottom: 7px; }
 .home-bright-acgency-s5 .navstyle2.owl-theme .owl-controls .owl-nav div { bottom: 28%; }
 
@@ -4438,7 +4442,8 @@ label.error { position: absolute; right: 0; }
     width: 100%;
     height: 100%;
     content: "";
-    background-color: rgba( 0, 0, 0, 0.7);
+	background-color: rgba( 0, 0, 0, 0.7);
+	border-radius: 10% !important;
 }
 
 .overlay-parallax.slides { background-color: rgba( 0, 0, 0, 0.5); }
@@ -4877,7 +4882,14 @@ label.error { position: absolute; right: 0; }
 .top-header-black{
 	text-align: center;
 	font-size: 2.5rem;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
+	color: #43b17d;
+}
+
+.team-title {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
 	color: #43b17d;
 }
 
@@ -5026,10 +5038,7 @@ color: white;
 {
 	font-size: .9rem;
 }
-.fa-facebook, .fa-twitter, .fa-instagram
-{
-	font-size: 1.7rem;
-}
+
 .go-top i
 {
 	color: #43b17d;
@@ -5127,3 +5136,182 @@ color: white;
 {
 	color: #298258;
 }
+
+.blog_column_metro .post h2.title-post a:hover, 
+.post h2.title-post a:hover {
+	color: #43b17d;
+}
+
+.game-title {
+	background: #43b17d;
+	color: #FFF;
+	padding: 7px;
+	border-radius: 5px;
+}
+
+.mobile-apps-showcase {
+	display: none;
+}
+
+.icon-button {
+	background-color: #fbfbfb;
+	border-radius: 3.6rem;
+	border: 1px solid #43b17d14;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.5rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+.icon-button-footer {
+	background-color: #262626;
+	border-radius: 3.6rem;
+	border: 1px solid #ffffff0a;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.5rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span, .icon-button-footer span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span, .icon-button-footer:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin: -1.8rem;
+}
+.twitter span {
+	background-color: #1da1f2;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.instagram span {
+	background-color: #833ab4;
+}
+.envelope span {
+	background-color: #43b17d;
+}
+
+/* Icons */
+.icon-button i, .icon-button-footer i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+.icon-button .fa-instagram, .icon-button-footer .fa-instagram {
+	color: #833ab4;
+}
+.icon-button .fa-facebook, .icon-button-footer .fa-facebook {
+	color: #3B5998;
+}
+.icon-button .fa-twitter, .icon-button-footer .fa-twitter {
+	color: #1da1f2;
+}
+.icon-button .fa-envelope, .icon-button-footer .fa-envelope {
+	color: #43b17d;
+}
+.icon-button:hover .fa-twitter, .icon-button-footer:hover .fa-twitter,
+.icon-button:hover .fa-facebook, .icon-button-footer:hover .fa-facebook,
+.icon-button:hover .fa-instagram, .icon-button-footer:hover .fa-instagram,
+.icon-button:hover .fa-envelope, .icon-button-footer:hover .fa-envelope {
+	color: white;
+}
+
+/*Preloader*/
+#preloader {
+	height: 70vh;
+	-webkit-transform: translateY(40%);
+	   -moz-transform: translateY(40%);
+		-ms-transform: translateY(40%);
+		 -o-transform: translateY(40%);
+			transform: translateY(40%);
+			text-align: center;
+  }
+  
+  /* LOADER */
+  .loader {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	position: relative;
+	margin: 0 auto;
+  }
+  
+  #loader-2 span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #3498db;
+	margin: 35px 5px;
+  }
+  
+  #loader-2 span:nth-child(1){
+	animation: bounce 1s ease-in-out infinite;
+  }
+  
+  #loader-2 span:nth-child(2){
+	animation: bounce 1s ease-in-out 0.33s infinite;
+  }
+  
+  #loader-2 span:nth-child(3){
+	animation: bounce 1s ease-in-out 0.66s infinite;
+  }
+  
+  @keyframes bounce{
+	0%, 75%, 100%{
+	  -webkit-transform: translateY(0);
+	  -ms-transform: translateY(0);
+	  -o-transform: translateY(0);
+	  transform: translateY(0);
+	}
+  
+	25%{
+	  -webkit-transform: translateY(-20px);
+	  -ms-transform: translateY(-20px);
+	  -o-transform: translateY(-20px);
+	  transform: translateY(-20px);
+	}
+  }

@@ -1,0 +1,10 @@
+# Mensaje de error personalizado en ubicación local
+#ErrorDocument 404 /404/404.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(.*\.)*empiricgames.com$ [NC]
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)$ https://empiricgames.com/$1 [R]
+
+#RewriteEngine on
+#RewriteRule ^web-development/$      /web-development.html [L]

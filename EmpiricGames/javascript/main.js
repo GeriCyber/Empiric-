@@ -1645,77 +1645,77 @@
         });
     };
 
-    var Blancediv = function() {
-        $(window).load(function() { 
-            if ( $('section').hasClass('blancejqurey1') ) {
-                $('.footer').each(function() {
-                    var h = document.getElementById("footer-second1").offsetHeight;
-                    document.getElementById("footer-second2").style.height = h + "px";
-                });
-            };
-            if ( matchMedia( 'only screen and (min-width: 479px)' ).matches ) {
-                if ( $('section').hasClass('blancejqurey2') ) {
-                    $('.footer-style').each(function() {
-                        var h = document.getElementById("footer-third2").offsetHeight;
-                        document.getElementById("footer-third1").style.height = h + "px";
-                    });
-                };
-            }
-            if ( $('section').hasClass('blancejqurey3') ) {
-                $('.footer-style').each(function() {
-                    var h = document.getElementById("footer-five1").offsetHeight;
-                    document.getElementById("footer-five2").style.height = h + "px";
-                });
-            };
-            if ( matchMedia( 'only screen and (min-width: 479px)' ).matches ) {
-                if ( $('section').hasClass('blancejqurey4') ) {
-                    $('.footer-style').each(function() {
-                        var h = document.getElementById("footer-seven1").offsetHeight;
-                        document.getElementById("footer-seven2").style.height = h + "px";
-                    });
-                };
-            }
-            if ( $('section').hasClass('blancejqurey5') ) {
-                $('.footer-style').each(function() {
-                    var h = document.getElementById("footer-night2").offsetHeight;
-                    document.getElementById("footer-night1").style.height = h + "px";
-                });
-            };
+    // var Blancediv = function() {
+    //     $(window).load(function() { 
+    //         if ( $('section').hasClass('blancejqurey1') ) {
+    //             $('.footer').each(function() {
+    //                 var h = document.getElementById("footer-second1").offsetHeight;
+    //                 document.getElementById("footer-second2").style.height = h + "px";
+    //             });
+    //         };
+    //         if ( matchMedia( 'only screen and (min-width: 479px)' ).matches ) {
+    //             if ( $('section').hasClass('blancejqurey2') ) {
+    //                 $('.footer-style').each(function() {
+    //                     var h = document.getElementById("footer-third2").offsetHeight;
+    //                     document.getElementById("footer-third1").style.height = h + "px";
+    //                 });
+    //             };
+    //         }
+    //         if ( $('section').hasClass('blancejqurey3') ) {
+    //             $('.footer-style').each(function() {
+    //                 var h = document.getElementById("footer-five1").offsetHeight;
+    //                 document.getElementById("footer-five2").style.height = h + "px";
+    //             });
+    //         };
+    //         if ( matchMedia( 'only screen and (min-width: 479px)' ).matches ) {
+    //             if ( $('section').hasClass('blancejqurey4') ) {
+    //                 $('.footer-style').each(function() {
+    //                     var h = document.getElementById("footer-seven1").offsetHeight;
+    //                     document.getElementById("footer-seven2").style.height = h + "px";
+    //                 });
+    //             };
+    //         }
+    //         if ( $('section').hasClass('blancejqurey5') ) {
+    //             $('.footer-style').each(function() {
+    //                 var h = document.getElementById("footer-night2").offsetHeight;
+    //                 document.getElementById("footer-night1").style.height = h + "px";
+    //             });
+    //         };
 
-            if ( matchMedia( 'only screen and (min-width: 1280px)' ).matches ) {
-                if ( $('section').hasClass('blancevideo1') ) {
-                    $('.bance-videoicon').each(function() {
-                        var h = document.getElementById("video-icon2").offsetHeight;
-                        document.getElementById("video-icon1").style.height = h + "px";
-                    });
-                };
-                if ( $('section').hasClass('blancevideo2') ) {
-                    $('.bance-videoicon').each(function() {
-                        var h = document.getElementById("video-image1").offsetHeight;
-                        document.getElementById("video-image2").style.height = h + "px";
-                    });
-                };
-            }
+    //         if ( matchMedia( 'only screen and (min-width: 1280px)' ).matches ) {
+    //             if ( $('section').hasClass('blancevideo1') ) {
+    //                 $('.bance-videoicon').each(function() {
+    //                     var h = document.getElementById("video-icon2").offsetHeight;
+    //                     document.getElementById("video-icon1").style.height = h + "px";
+    //                 });
+    //             };
+    //             if ( $('section').hasClass('blancevideo2') ) {
+    //                 $('.bance-videoicon').each(function() {
+    //                     var h = document.getElementById("video-image1").offsetHeight;
+    //                     document.getElementById("video-image2").style.height = h + "px";
+    //                 });
+    //             };
+    //         }
                 
-            if ( matchMedia( 'only screen and (min-width: 1280px)' ).matches ) {
-                if ( $('section').hasClass('blancetestimonial') ) {
-                    $('.bance-testimonial').each(function() {
-                        var h = document.getElementById("blance-testimonial1").offsetHeight;
-                        document.getElementById("blance-testimonial2").style.height = h + "px";
-                    });
-                };
-            }
+    //         if ( matchMedia( 'only screen and (min-width: 1280px)' ).matches ) {
+    //             if ( $('section').hasClass('blancetestimonial') ) {
+    //                 $('.bance-testimonial').each(function() {
+    //                     var h = document.getElementById("blance-testimonial1").offsetHeight;
+    //                     document.getElementById("blance-testimonial2").style.height = h + "px";
+    //                 });
+    //             };
+    //         }
 
-            if ( matchMedia( 'only screen and (min-width: 1280px)' ).matches ) {
-                if ( $('section').hasClass('blancediv') ) {
-                    $('.blance-section').each(function() {
-                        var h = document.getElementById("blancediv2").offsetHeight;
-                        document.getElementById("blancediv1").style.height = h + "px";
-                    });
-                };
-            }
-        });
-    };
+    //         if ( matchMedia( 'only screen and (min-width: 1280px)' ).matches ) {
+    //             if ( $('section').hasClass('blancediv') ) {
+    //                 $('.blance-section').each(function() {
+    //                     var h = document.getElementById("blancediv2").offsetHeight;
+    //                     document.getElementById("blancediv1").style.height = h + "px";
+    //                 });
+    //             };
+    //         }
+    //     });
+    // };
 
     var swClick = function () {
         function activeLayout () {
@@ -1872,7 +1872,7 @@
         Section_Slider();
         tfGallery();
         popupGallery();
-        Blancediv();
+        // Blancediv();
         swClick();
         goTop();          
         retinaLogos(); 
@@ -1919,6 +1919,3 @@
     
 
 })(jQuery);
-
-
-

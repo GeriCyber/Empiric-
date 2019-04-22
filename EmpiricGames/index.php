@@ -1,10 +1,11 @@
 <?php
   $salto="\r\n\r\n"; 
   $send = "";
+  $emailError = "";
   if (isset($_POST['submit'])) 
   {
     $from = 'Correo de: '.$_POST['email'];
-    $to = 'info@empiricgames.net'.',';
+    $to = 'info@empiricgames.com'.',';
     $to .= 'luis_axlux@hotmail.com';
     $subject = 'Nuevo contacto en Empiric Games de: '.$_POST['email'];
     $body = 'Mensaje: '.$_POST['mensaje'];
@@ -31,7 +32,7 @@
 <head>
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Empiric Games - Empresa de Desarrollo de Videojuegos</title>
+    <title>Empiric Games | Desarrollo de Videojuegos</title>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Bootstrap  -->
@@ -48,13 +49,13 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
-
+    
     <!-- COMMON TAGS -->
     <meta name="description" content="Empiric Games Desarrollo de Video Juegos y Apps.">
     <meta name="keywords" content="juegos, video juegos, android, unity, desarrollo, games, video games" />
     <meta name="author" content="Empiric Games">
     <meta name="designer" content="Empiric Games">
-    <meta name="url" content="http://empiricgames.net">
+    <meta name="url" content="https://empiricgames.com">
     <meta name="copyright" content="Empiric Games">
     <meta name="robots" content="index,follow">
     <!-- Schema.org for Google+ -->
@@ -67,7 +68,7 @@
     <!-- Open Graph general -->
     <meta name="og:title" content="Empiric Games">
     <meta name="og:description" content="Empiric Games Desarrollo de Video Juegos y Apps.">
-    <meta name="og:url" content="http://empiricgames.net">
+    <meta name="og:url" content="https://empiricgames.com">
     <meta name="og:site_name" content="Empiric Games">
     <meta name="og:type" content="website">
 
@@ -81,8 +82,8 @@
             <div class="container">
                 <div class="row fit">
                 <div class="col-sm-4">
-                        <div class="logo wow fadeInUp" data-wow-delay="1s">
-                            <a href="empiricgames.net"><img src="img/empiricGAMES.png" width="150"></a>
+                        <div class="logo fadeInUp">
+                            <a href="index.html"><img src="img/empiricGAMES.png" width="150"></a>
                         </div>
                     </div>
                     <div class="col-sm-8">
@@ -105,6 +106,9 @@
                                         <li><a class="smoth-scroll" href="#habilidades">Habilidades</a>
                                         </li>
                                         <li><a class="smoth-scroll" href="#apps">Apps</a>
+                                        </li>
+                                        <li>
+                                            <a href="#equipo" class="smoth-scroll">Equipo</a>
                                         </li>
                                         <li><a class="smoth-scroll" href="#contacto">Contactanos</a>
                                         </li>
@@ -189,7 +193,7 @@
                                 id="slide-3049-layer-4"
                                 data-x="['right','right','right','right']" data-hoffset="['-73','30','30','30']"
                                 data-y="['middle','middle','middle','middle']" data-voffset="['32','32','10','-10']"
-                                data-fontsize="['18',18','16','14']"
+                                data-fontsize="['22',18','16','14']"
                                 data-lineheight="['30','30','22','16']"
                                 data-fontweight="['300','300','300','300']"
                                 data-width="['800',800','700','450']"
@@ -210,7 +214,7 @@
                                 style="z-index: 17; white-space: normal;">Somos un equipo de personas que se animan por la creacion <br> de videojuegos.
                             </div>
 
-                            <a href="#apps" target="_self" class="tp-caption flat-button botton-slider bg2e2f fontsize13 our-work"
+                            <a href="#apps" target="_self" class="smoth-scroll tp-caption flat-button botton-slider bg2e2f fontsize13 our-work"
 
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
 
@@ -231,10 +235,11 @@
             <div class="container">
                 <div class="section-text-box">
                     <div class="row">
-                      <h1 class="top-header-black" id="acerca">Descubre más 
+                      <h1 class="top-header-black wow fadeInUp" data-wow-duration="1s" id="acerca">Descubre más 
                         acerca de nosotros</span></h1>
                         <div class="col-md-4 section-reponsive-mb30">
-                            <article class="post clearfix">
+                            <article class="post clearfix text-center wow fadeInUp" data-wow-duration="1s">
+                                <img src="img/collaboration.svg" width="100" class="padding-bottom-10">
                                 <div class="padding-right-10">
                                     <h2 class="title-post fontsize24 margin-bottom-18 text-center"><a href="#" class="title-no-link">¿Quienes somos?</a></h2>
                                     <p class="text-center">Empiric Games es una empresa que desarrolla aplicaciones para el entretenimiento.</p>
@@ -242,17 +247,19 @@
                             </article>
                         </div>
                         <div class="col-md-4 section-reponsive-mb30">
-                            <article class="post clearfix">
+                            <article class="post clearfix text-center wow fadeInUp" data-wow-duration="1s">
+                                <img src="img/work.svg" width="100" class="padding-bottom-10">
                                 <div class="padding-right-10">
                                     <h2 class="title-post fontsize24 margin-bottom-18 text-center"><a href="#" class="title-no-link">¿Como trabajamos?</a></h2>
                                     <p class="text-center">
-                                      Trabajamos con las últimas tendencias modernas (programación, modelado, visuales) para el desarrollo de aplicaciones, nos encargamos de usar las herramientas más completas y recomendadas del mercado.
+                                      Trabajamos con las últimas tendencias modernas para el desarrollo con Unity, nos encargamos de usar las herramientas más completas y recomendadas del mercado.
                                     </p>
                                 </div>
                             </article>
                         </div>
                         <div class="col-md-4 section-reponsive-mb30">
-                            <article class="post clearfix">
+                            <article class="post clearfix text-center wow fadeInUp" data-wow-duration="1s">
+                                <img src="img/process.svg" width="100" class="padding-bottom-10">
                                 <div class="padding-right-10">
                                     <h2 class="title-post fontsize24 margin-bottom-18 text-center"><a href="#" class="title-no-link">¿Que hacemos?</a></h2>
                                     <p class="text-center">Realizamos la programación y diseño, conjuntamente con el desarrollo de sonidos que son implementados en el producto final.</p>
@@ -264,12 +271,12 @@
             </div>
         </section>
 
-        <section class="flat-row home-basic-agency-s3">
-             <div class="container">
+        <section class=" home-basic-agency-s3">
+             <div class="container padding-bottom-50 padding-top-62">
                  <div class="row" id="habilidades">
-                   <h1 class="top-header-black">¿Que ofrecemos?</h1>
+                   <h1 class="top-header-black wow fadeInUp" data-wow-duration="1s">¿Que ofrecemos?</h1>
                     <div class="col-md-4 section-reponsive-mb30">
-                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix">
+                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix wow fadeInLeft" data-wow-duration="1s">
                             <div class="box-header">
                                 <div class="box-icon">
                                     <i class="ti-ruler-pencil"></i>
@@ -282,7 +289,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 section-reponsive-mb30">
-                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix">
+                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix wow fadeInLeft" data-wow-duration="1s">
                             <div class="box-header">
                                 <div class="box-icon">
                                     <i class="ti-desktop"></i>
@@ -297,7 +304,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 section-reponsive-mb30">
-                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix">
+                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix wow fadeInLeft" data-wow-duration="1s">
                             <div class="box-header">
                                 <div class="box-icon">
                                     <i class="ti-mobile"></i>
@@ -315,7 +322,7 @@
                 <div class="divider h54"></div>
                 <div class="row">
                     <div class="col-md-4 section-reponsive-mb30">
-                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix">
+                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix wow fadeInLeft" data-wow-duration="1s">
                             <div class="box-header">
                                 <div class="box-icon">
                                     <i class="ti-settings"></i>
@@ -330,7 +337,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 section-reponsive-mb30">
-                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix">
+                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix wow fadeInLeft" data-wow-duration="1s">
                             <div class="box-header">
                                 <div class="box-icon">
                                     <i class="ti-layout"></i>
@@ -345,7 +352,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 section-reponsive-mb30">
-                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix">
+                        <div class="iconbox left style3 left-icon fontsize-icon-36 clearfix wow fadeInLeft" data-wow-duration="1s">
                             <div class="box-header">
                                 <div class="box-icon">
                                     <i class="ti-headphone-alt"></i>
@@ -363,39 +370,82 @@
             </div>
         </section>
 
-        <section class="home-basic-agency-s4">
-          <h1 class="top-header-black padding-top-40" id="apps">App Showcase</h1>
-            <div class="wrap-our-work style-post-agency clearfix  padding-bottom-50">
+        <section class="home-basic-agency-s4" id="apps">
+          <h1 class="top-header-black padding-top-40 wow fadeInUp" data-wow-duration="1s">App Showcase</h1>
+            <div class="wrap-our-work style-post-agency clearfix  padding-bottom-50 desktop-apps-showcase">
                 <div class="section-one-fourth grid-metro blog_column_metro wow fadeInUp" data-wow-duration=".5s">
                     <article class="post clearfix">
                         <div class="featured-post">
-                            <a href="blog-single-sidebar.html"><img src="img/Skynimals.png" alt="image"></a>
+                            <a href="Xeveris"><img src="img/LogoXeveris.png" alt="Xeveris"></a>
                         </div>
                         <div class="content-post">
-                            <h2 class="title-post"><a href="#" title="">Skynimals</a></h2>
+                            <h2 class="title-post"><a href="Xeveris" title="Xeveris">Xeveris</a></h2>
                         </div>
                     </article>
+                    <a href="#"><h6 align="center"><span class="game-title">Xeveris</span></h6></a>
                 </div>
                 <div class="section-one-fourth grid-metro blog_column_metro wow fadeInUp" data-wow-duration=".5s">
                     <article class="post clearfix">
                         <div class="featured-post">
-                            <a href="blog-single-sidebar.html"><img src="img/SwapSpace.png" alt="image"></a>
+                            <a href="Skynimals"><img src="img/Skynimals.png" alt="image"></a>
                         </div>
                         <div class="content-post">
-                            <h2 class="title-post"><a href="#">Swap Space</a></h2>
+                            <h2 class="title-post"><a href="Skynimals" title="Skynimals">Skynimals</a></h2>
+                        </div>
+                    </article>
+                    <a href="Skynimals"><h6 align="center"><span class="game-title">Skynimals</span></h6></a>
+                </div>
+                <div class="section-one-fourth grid-metro blog_column_metro wow fadeInUp" data-wow-duration=".5s">
+                    <article class="post clearfix">
+                        <div class="featured-post">
+                            <a href="Swap-Space"><img src="img/SwapSpace.png" alt="Swap Space"></a>
+                        </div>
+                        <div class="content-post">
+                            <h2 class="title-post"><a href="Swap-Space" title="Swap Space">Swap Space</a></h2>
+                        </div>
+                    </article>
+                    <a href="Swap-Space"><h6 align="center"><span class="game-title">Swap Space</span></h6></a>
+                </div>
+            </div>
+            <div class="flat-row mobile-apps-showcase">
+                <div class="col-sm-12">
+                    <article class="post clearfix">
+                        <div class="featured-post">
+                            <a href="Xeveris"><img src="img/LogoXeveris.png" alt="Xeveris"></a>
+                        </div>
+                        <div class="content-post">
+                            <h2 class="title-post"><a href="Xeveris" title="Xeveris">Xeveris</a></h2>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-12">
+                    <article class="post clearfix">
+                        <div class="featured-post">
+                            <a href="Skynimals"><img src="img/Skynimals.png" alt="Skynimals"></a>
+                        </div>
+                        <div class="content-post">
+                            <h2 class="title-post"><a href="Skynimals" title="Xeveris">Skynimals</a></h2>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-12">
+                    <article class="post clearfix">
+                        <div class="featured-post">
+                            <a href="Swap-Space"><img src="img/SwapSpace.png" alt="SwapSpace"></a>
+                        </div>
+                        <div class="content-post">
+                            <h2 class="title-post"><a href="Swap-Space" title="Xeveris">Swap Space</a></h2>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="call-action style2 home-business-s7">
+        <section class="call-action style2 home-business-s7" id="equipo" >
           <div class="container">
-                <section id="equipo" class="row">
+                <section class="row">
                   <section class="container-equipo">
-                    <div class="title-call-action another align">
-                          Nuestro equipo de desarrollo
-                      </div>
+                    <h1 class="team-title padding-top-40 wow fadeInUp" data-wow-duration="1s">Nuestro Equipo de Desarrollo</h1>
 
                     <div class="col-md-4 col-sm-12 equip wow fadeInUp" data-wow-duration="1s">
                       <img src="img/avatar-luis.png" alt="" class="equipo-img"/>
@@ -403,50 +453,43 @@
                       <p>
                         Artista 3D / Desarrollador / Programador 
                       </p>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 equip wow fadeInUp" data-wow-duration="1s">
-                      <img src="img/avatar-esteban.png" alt="" class="equipo-img"/>
-                      <h2>Esteban Hernandez</h2>
-                      <p>
-                        Desarrollador / Programador
-                      </p>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 equip wow fadeInUp" data-wow-duration="1s">
-                      <img src="img/avatar-aldo.png" alt="" class="equipo-img"/>
-                      <h2>Aldo Di Luigi</h2>
-                      <p>
-                        Artista Gráfico
-                      </p>
-                    </div>
-                    
-                    <div class="col-md-12 col-sm-12 equip wow fadeInUp" >
-                        <div class="row">
-                            <div class="col-md-2 col-sm-12">
-                              <!--Relleno-->
-                            </div>
-                            <div class="col-md-4 wow fadeInUp" data-wow-duration="1s">
-                                <img src="img/avatar-alejandro.png" alt="" class="equipo-img"/>
-                                <h2>Alejandro Hernandez</h2>
-                                <p>
-                                    Artista 3D / Programador
-                                </p>
-                            </div>
-                            <div class="col-md-4 wow fadeInUp" data-wow-duration="1s">
-                                <img src="img/avatar-daniel.png" alt="" class="equipo-img"/>
-                                <h2>Daniel Marcial</h2>
-                                <p>
-                                    Musica / Sonidos FX
-                                </p>
-                            </div>
+                        <div class="padding-top-20">
+                            <a href="#" class="icon-button envelope"><i class="fa fa-envelope"></i><span></span></a>
+                            <a href="#" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
+                            <a href="#" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
                         </div>
                     </div>
-                    
+
+                    <div class="col-md-4 col-sm-12 equip wow fadeInUp" data-wow-duration="1s">
+                        <img src="img/avatar-aldo.png" alt="" class="equipo-img"/>
+                        <h2>Aldo Di Luigi</h2>
+                        <p>
+                          Artista Gráfico
+                        </p>
+                        <div class="padding-top-20">
+                            <a href="#" class="icon-button instagram"><i class="fa fa-instagram"></i><span></span></a>
+                            <a href="#" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
+                            <a href="#" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+                        </div>
+                      </div>
+
+                    <div class="col-md-4 col-sm-12 equip wow fadeInUp" data-wow-duration="1s">
+                        <img src="img/avatar-daniel.png" alt="" class="equipo-img"/>
+                        <h2>Daniel Marcial</h2>
+                        <p>
+                            Musica / Sonidos FX
+                        </p>
+                        <div class="padding-top-20">
+                            <a href="#" class="icon-button instagram"><i class="fa fa-instagram"></i><span></span></a>
+                            <a href="#" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
+                            <a href="#" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+                        </div>
+                    </div>
+                
                   </section>
                 </section>
               </div>
-              </section>
+        </section>
 
         <!-- Footer -->
         <section class="blancejqurey1 footer" id="footer">
@@ -455,34 +498,38 @@
                   <div class="row">
                     <div class="col-md-6 margin-top-20">
                       <p class="text-footer text-left">
-                        Para comunicarte con el equipo de trabajodebes enviar un mensaje en el formulario que encontraras aqui. Nuestro equipo leera tus inquietudes con gusto nuestra respuesta te la haremos saber a tu correo.
+                        Para comunicarte con el equipo de desarrollo debes enviar un mensaje en el formulario que encontrarás aquí. Nuestro equipo leera tus inquietudes con gusto nuestra respuesta te la haremos saber a tu correo.
+                        <br>También puedes enviarnos un email a: <a class="copy-text" href="mailto:info@empiricgames.com">info@empiricgames.com</a>
                     </p><br>
                     <div class="follow-us text-center margin-left-36">
-                        <span class="h4">SIGUENOS</span>
+                        <!-- <span class="h4">SIGUENOS</span> -->
                     </div><br>
-                    <div class="flat-socials gradient-bgvioletgreen text-center margin-bottom-20">
-                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i><i class="fa fa-instagram"></i></a>
+                    <div class="text-center margin-bottom-20">
+                        <a href="#" class="icon-button-footer instagram"><i class="fa fa-instagram"></i><span></span></a>
+                        <a href="#" class="icon-button-footer facebook"><i class="fa fa-facebook"></i><span></span></a>
+                        <a href="#" class="icon-button-footer twitter"><i class="fa fa-twitter"></i><span></span></a>
                     </div>
                 </div>
                     <div class="col-md-6 margin-bottom-20">
-                      <form method="post" role="form" action="#contacto">
-                        <div class="form-group">
-                          <input type="email" class="form-control" name="email" placeholder="Tu Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="mensaje" placeholder="Tu Mensaje" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
-                        <?php echo $send; ?>
-                      </form>
+                        <form method="post" action="#contacto">
+                            <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Tu Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="mensaje" placeholder="Tu Mensaje" rows="3"></textarea>
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+                            <div class="padding-top-10">
+                                <?php echo $emailError; ?>
+                                <?php echo $send; ?>
+                            </div>
+                        </form>
                     </div>
                   </div>
               </div>
           </div>
           <div class="container-fluid text-center text-white copyright">
-               &copy; Copyright 2018 <a href="empiricgames.net" class="copy-text">Empiric Games</a> | Todos los derechos reservados.
+               &copy; Copyright 2019 <a href="https://empiricgames.com" class="copy-text">Empiric Games</a> | Todos los derechos reservados.
           </div>
         </section>
         <!---Footer End-->
@@ -497,7 +544,6 @@
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.easing.js"></script>
-    <script type="text/javascript" src="javascript/jquery-validate.js"></script>
     <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
     <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
 
