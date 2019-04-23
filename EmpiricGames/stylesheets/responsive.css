@@ -465,6 +465,19 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	.navigation-background .logo {
+		width: 25%;
+	}
+    .navbar-toggle .icon-bar {
+        background: #f8f8f8;
+    }
+    .navigation-background .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+        margin-top: -60px;
+    }
 	.downscrolled.header-classic .menu-extra > ul > li:last-child > a { padding: 25px 0px 25px 12px; }
 	.downscrolled.header-classic .menu-extra > ul > li > a > span { top: 12px; }
 	.downscrolled.header-classic .menu-extra > ul > li > a { padding: 25px 11px 25px; }
@@ -959,22 +972,7 @@
         font-size: 12px;
     }
 	.navigation-background .logo {
-		width: 20%;
-	}
-}
-
-/* All Mobile Sizes */
-@media only screen and (max-width: 767px) {
-	.logo img
-	{
-		width: 50%;
-	}
-	.fit
-	{
-		display: inherit;
-	}
-	.navigation-background .logo {
-		width: 35%;
+		width: 25%;
 	}
     .navbar-toggle .icon-bar {
         background: #f8f8f8;
@@ -984,7 +982,31 @@
     }
     .navbar-toggle {
         margin-right: 0px;
-        margin-top: -55px;
+        margin-top: -60px;
+	}
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+	.logo img {
+		width: 70px !important;
+	}
+	.fit
+	{
+		display: inherit;
+	}
+	.navigation-background .logo {
+		width: 25%;
+	}
+    .navbar-toggle .icon-bar {
+        background: #f8f8f8;
+    }
+    .navigation-background .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+        margin-top: -60px;
     }
     .navbar {
         min-height: 0px;

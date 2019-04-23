@@ -83,7 +83,7 @@
                 <div class="row fit">
                 <div class="col-sm-4">
                         <div class="logo fadeInUp">
-                            <a href="index.html"><img src="img/empiricGAMES.png" width="150"></a>
+                            <a href="https://empiricgames.com"><img src="img/empiricGAMES.png" width="150"></a>
                         </div>
                     </div>
                     <div class="col-sm-8">
@@ -382,7 +382,7 @@
                             <h2 class="title-post"><a href="Xeveris" title="Xeveris">Xeveris</a></h2>
                         </div>
                     </article>
-                    <a href="#"><h6 align="center"><span class="game-title">Xeveris</span></h6></a>
+                    <a href="Xeveris"><h6 align="center"><span class="game-title">Xeveris</span></h6></a>
                 </div>
                 <div class="section-one-fourth grid-metro blog_column_metro wow fadeInUp" data-wow-duration=".5s">
                     <article class="post clearfix">

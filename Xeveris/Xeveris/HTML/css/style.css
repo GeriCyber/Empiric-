@@ -1,14 +1,6 @@
-/* =================================
-------------------------------------
-  EndGam - Gaming Magazine Template
-  Version: 1.0
- ------------------------------------
- ====================================*/
-
-
 
 /*----------------------------------------*/
-/* Template default CSS
+/* Main CSS
 /*----------------------------------------*/
 /*
 @font-face {
@@ -21,9 +13,7 @@ html,
 body {
 	height: 100%;
 	background-image: url("../img/resources/BackgroundPageTop.png");
-	font-family: 'Roboto', serif;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+	font-family: 'Raleway', serif;
 
 }
 
@@ -44,14 +34,16 @@ h1 {
 
 h2 {
 	font-size: 50px;
+	font-family: 'Signika';
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 24px;
+	font-family: 'Signika';
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 h5 {
@@ -75,13 +67,16 @@ p {
 
 .letraOscuro{
 
-	font-family: 'Ravenscroft', serif;
-
-	transform: scale(1, .6);
-	letter-spacing: 4px;
+	font-family: 'Signika', serif;
+	letter-spacing: 1.5px;
 	color: #f20548;
-	line-height: 1.6;
-	font-weight: 500;
+	font-weight: 400;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.title-big {
+	font-size: 45px;
 }
 
 img {
@@ -145,7 +140,7 @@ ol {
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: top center;
+	background-position: center center;
 }
 
 .spad {
@@ -253,7 +248,7 @@ ol {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #f20548;
 		border-left-color: transparent;
 	}
 	50% {
@@ -265,7 +260,7 @@ ol {
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
-		border: 4px solid #c80042;
+		border: 4px solid #f20548;
 		border-left-color: transparent;
 	}
 }
@@ -278,7 +273,7 @@ ol {
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #f20548;
 		border-left-color: transparent;
 	}
 	100% {
@@ -566,43 +561,6 @@ ol {
 	opacity: 0;
 }
 
-.hero-slider .owl-item.active .hero-item h2,
-.hero-slider .owl-item.active .hero-item p,
-.hero-slider .owl-item.active .hero-item .site-btn {
-	top: 0;
-	opacity: 1;
-}
-
-.hero-slider .owl-item.active .hero-item h2 {
-	-webkit-transition: all 0.5s ease 0.4s;
-	-o-transition: all 0.5s ease 0.4s;
-	transition: all 0.5s ease 0.4s;
-}
-
-.hero-slider .owl-item.active .hero-item p {
-	-webkit-transition: all 0.5s ease 0.6s;
-	-o-transition: all 0.5s ease 0.6s;
-	transition: all 0.5s ease 0.6s;
-}
-
-.hero-slider .owl-item.active .hero-item .site-btn {
-	-webkit-transition: all 0.5s ease 0.8s;
-	-webkit-transition: all 0.5s ease 0.8s;
-	-o-transition: all 0.5s ease 0.8s;
-	transition: all 0.5s ease 0.8s;
-}
-
-.hero-slider .owl-item.active .hero-item .offer-card {
-	opacity: 1;
-	-webkit-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: all 0.5s ease 1s;
-	-webkit-transition: all 0.5s ease 1s;
-	-o-transition: all 0.5s ease 1s;
-	transition: all 0.5s ease 1s;
-}
-
 /* ----------------
   Intro section
 ---------------------*/
@@ -614,14 +572,10 @@ ol {
 }
 
 .text-box .top-meta {
-	font-size: 18px;
+	font-size: 30px;
 	font-weight: 500;
-	margin-bottom: 20px;
 }
 
-.text-box .top-meta a {
-	color: #a5103d;
-}
 
 .text-box h3 {
 	margin-bottom: 40px;
@@ -629,10 +583,10 @@ ol {
 }
 
 .text-box p {
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 500;
-	color: #68647d;
-	margin-bottom: 35px;
+	color: #b1b1b1;
+	/*margin-bottom: 35px;*/
 }
 
 .text-box .read-more {
@@ -861,7 +815,7 @@ ol {
 -----------------------*/
 
 .intro-video-section {
-	height: 725px;
+	height: 100vh;
 	position: relative;
 }
 
@@ -887,17 +841,16 @@ ol {
 .video-text h2 {
 	font-size: 48px;
 	text-transform: uppercase;
-	font-style: italic;
-	font-weight: 700;
 	color: #fff;
-	margin-bottom: 1px;
+	letter-spacing: 1px;
 }
 
 .video-text p {
 	font-size: 18px;
-	color: #a3a1b3;
-	font-weight: 500;
+	color: #f20548;
+	font-weight: 800;
 	margin-bottom: 0;
+	letter-spacing: 1px;
 }
 
 .video-text:after {
@@ -911,10 +864,17 @@ ol {
 	background: #f20548;
 }
 
+.xeveris-color {
+	color: #f20548 !important;
+}
+
 /* ----------------
   Featured section
 ---------------------*/
-
+.icon-feature {
+	float: right;
+	margin-right: 25px;
+}
 .featured-section {
 	position: relative;
 	overflow: hidden;
@@ -957,20 +917,6 @@ ol {
 	color: #251e2f;
 }
 
-.gradient-bg,
-.newsletter-section {
-	background: #3e0f3d;
-	/* Old browsers */
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #3e0f3d 0%, #1c0f3b 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: -webkit-gradient(linear, left top, right top, from(#3e0f3d), to(#1c0f3b));
-	background: -o-linear-gradient(left, #3e0f3d 0%, #1c0f3b 100%);
-	background: linear-gradient(to right, #3e0f3d 0%, #1c0f3b 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e0f3d', endColorstr='#1c0f3b', GradientType=1);
-	/* IE6-9 */
-}
 
 /* --------------------
   Newsletter section
@@ -1013,18 +959,6 @@ ol {
 
 .footer-section {
 	text-align: center;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#330d38+0,190d36+100 */
-	/*background: #330d38;
-	/* Old browsers */
-	/* FF3.6-15 */
-	/*background: -webkit-linear-gradient(left, #330d38 0%, #190d36 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	/*background: -webkit-gradient(linear, left top, right top, from(#330d38), to(#190d36));
-	background: -o-linear-gradient(left, #330d38 0%, #190d36 100%);
-	background: linear-gradient(to right, #330d38 0%, #190d36 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#330d38', endColorstr='#190d36', GradientType=1);
-	/* IE6-9 */
 }
 
 .footer-section .container {
@@ -1064,16 +998,16 @@ ol {
 .copyright {
 	font-size: 12px;
 	font-weight: 500;
-	color: #9190a5;
-	opacity: 0.20;
+	color: #b1b1b1;
 }
 
 .copyright a {
-	color: #9190a5;
+	color: #b1b1b1;
+	font-family: 'Signika';
 }
 
 .copyright a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* ----------------
@@ -1115,287 +1049,6 @@ ol {
 	color: #c313b7;
 }
 
-/* --------------
-  Games Page
------------------*/
-
-.games-section {
-	padding: 108px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#501755+0,2d1854+100 */
-	background: #501755;
-	/* Old browsers */
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: -o-linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	background: linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#501755', endColorstr='#2d1854', GradientType=1);
-	/* IE6-9 fallback on horizontal gradient */
-}
-
-.game-filter {
-	list-style: none;
-	margin-bottom: 82px;
-}
-
-.game-filter li {
-	display: inline-block;
-	width: 40px;
-	height: 34px;
-	background: #503c6e;
-	border-radius: 17px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.game-filter li:hover {
-	background: #c313b7;
-}
-
-.game-filter li a {
-	font-size: 15px;
-	font-weight: 700;
-	color: #fff;
-	display: block;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	padding-top: 7px;
-}
-
-.game-item {
-	margin-bottom: 80px;
-}
-
-.game-item h5 {
-	font-size: 20px;
-	color: #fff;
-	padding-top: 30px;
-	margin-bottom: 20px;
-}
-
-.game-item .read-more {
-	font-size: 15px;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-style: italic;
-	color: #a5103d5;
-}
-
-.game-item .read-more img {
-	margin-left: 13px;
-}
-
-.site-pagination {
-	display: -ms-flex;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
-
-.site-pagination a {
-	width: 38px;
-	height: 44px;
-	border-radius: 50%;
-	font-size: 16px;
-	font-weight: 500;
-	border: 2px solid transparent;
-	color: #fff;
-	display: -ms-inline-flex;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-.site-pagination a.active {
-	width: 44px;
-	margin: 0 10px;
-	color: #a5103d5;
-	border: 2px solid #a5103d5;
-}
-
-.site-pagination a.active:first-child {
-	margin-left: 0;
-}
-
-.game-page-sideber .widget-item {
-	margin-bottom: 55px;
-}
-
-/* ------------------
-  Game single Page
----------------------*/
-
-.games-single-page,
-.review-section,
-.blog-page,
-.contact-page {
-	padding: 104px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#501755+0,2d1854+100 */
-	background: #501755;
-	/* Old browsers */
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: -o-linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	background: linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#501755', endColorstr='#2d1854', GradientType=1);
-	/* IE6-9 fallback on horizontal gradient */
-}
-
-.game-single-preview {
-	margin-bottom: 108px;
-}
-
-.game-single-content .gs-meta {
-	font-size: 18px;
-	color: #68647d;
-	font-weight: 500;
-	margin-bottom: 20px;
-}
-
-.game-single-content .gs-meta a {
-	color: #a5103d5;
-}
-
-.game-single-content .gs-title {
-	font-size: 60px;
-	color: #fff;
-	margin-bottom: 40px;
-}
-
-.game-single-content h4 {
-	color: #a5103d5;
-	margin-bottom: 20px;
-}
-
-.game-single-content p {
-	font-size: 16px;
-	font-weight: 500;
-	color: #68647d;
-	line-height: 1.8;
-	margin-bottom: 70px;
-}
-
-.rating-widget {
-	background: #34164b;
-	padding: 55px 0 30px;
-}
-
-.rating-widget ul {
-	list-style: none;
-	padding: 0 38px;
-	margin-bottom: 30px;
-}
-
-.rating-widget ul li {
-	display: block;
-	font-size: 16px;
-	color: #a5103d5;
-	font-weight: 500;
-	margin-bottom: 10px;
-}
-
-.rating-widget ul li span {
-	float: right;
-	color: #68647d;
-}
-
-.rating-widget h5 {
-	text-align: right;
-	font-size: 36px;
-	color: #fff;
-	font-weight: 900;
-	padding-right: 38px;
-}
-
-.rating-widget h5 i {
-	font-weight: 500;
-	font-size: 16px;
-	font-style: italic;
-	color: #65607b;
-	text-transform: uppercase;
-	margin-right: 18px;
-}
-
-.rating-widget h5 span {
-	color: #a5103d5;
-}
-
-.testimonials-widget {
-	background: #34164b;
-	padding: 55px 0 50px;
-}
-
-.testimonials-widget .testim-text {
-	padding: 0 30px;
-}
-
-.testimonials-widget .testim-text p {
-	font-size: 16px;
-	font-weight: 500;
-	color: #68647d;
-	line-height: 1.8;
-	margin-bottom: 40px;
-}
-
-.testimonials-widget .testim-text h6 {
-	color: #68647d;
-	padding-left: 15px;
-}
-
-.testimonials-widget .testim-text h6 span {
-	color: #a5103d5;
-}
-
-.game-author-section {
-	background: #3a1854;
-	padding: 51px 0;
-	overflow: hidden;
-}
-
-.game-author-pic {
-	width: 117px;
-	height: 117px;
-	border-radius: 50%;
-	float: left;
-	margin-right: 55px;
-}
-
-.game-author-info {
-	overflow: hidden;
-	padding-top: 10px;
-}
-
-.game-author-info h4 {
-	color: #fff;
-	margin-bottom: 20px;
-}
-
-.game-author-info h4 span {
-	color: #a5103d5;
-}
-
-.game-author-info p {
-	font-size: 16px;
-	font-weight: 500;
-	color: #68647d;
-	line-height: 1.8;
-	margin-bottom: 0;
-}
-
 /* ----------------
   Review section
 ---------------------*/
@@ -1414,7 +1067,7 @@ ol {
 }
 
 .review-content p {
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 }
 
 .review-content .rating {
@@ -1653,6 +1306,30 @@ ol {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
+	.separator {
+		margin-left:50%;  
+  		text-align:center;
+	}
+	.letraOscuro, .text-box .top-meta, .xeveris-color, .review-content p {
+		text-align: center;
+	}
+	#global-bg {
+		margin-top: -200px !important;
+	}
+	#logo {
+		width: 80% !important;
+	}
+	.icon-feature {
+		float: inherit;
+		margin-right: 0;
+	}
+	.fog__img, .fog__img--first,
+	.fog__img--second {
+		display: none;
+	}
+	.intro-section {
+		margin-top: 20px;
+	}
 	.header-bar-warp {
 		padding: 25px 20px 10px;
 	}
@@ -1754,6 +1431,9 @@ ol {
 		text-align: left;
 		padding-right: 0;
 	}
+	.bg-features {
+		padding: 40px !important;
+	}
 }
 
 /* Small Mobile :320px. */
@@ -1786,13 +1466,20 @@ ol {
 		float: none;
 		margin-bottom: 20px;
 	}
+	.bg-container {
+
+		margin-top: 30px !important;
+	}
+	.bg-features {
+		padding: 40px !important;
+	}
 }
 
-.container #logo {
+div #logo {
 
 
-	width: 55% !important;
-	height: 55%;
+	width: 40%;
+	height: 40%;
 }
 
 .bg-features {
@@ -1800,11 +1487,6 @@ ol {
 	background-color: #31313187;
     padding: 50px 80px;
     width: 90%;
-}
-
-.bg-container {
-
-	margin-top: 120px;
 }
 
 /*fog effect*/
@@ -1875,86 +1557,58 @@ figure {
 }
 
 .home-box {
-	top: 12%;
-}
-/* video */
-.mm-product-video-modal-container {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 10000;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
-  display: none;
-  overflow: scroll;
-}
-
-.mm-product-video-modal-container.open {
-  display: block;
-}
-
-.mm-product-video-modal-close:hover {
-  cursor: pointer;
-}
-
-.mm-product-video-modal-close {
-  color: #fff;
-  position: fixed;
-  z-index: 1000000000;
-  top: 20px;
-  right: 20px;
-  font-size: 40px;
-}
-
-.mm-product-video-modal {
-  width: 60%;
-  max-height: 800px;
-  overflow: scroll;
-  position: relative;
-  top: -1000px;
-  text-align: left;
-  border-radius: 4px;
-}
-
-.mm-product-video-modal.open {
-  top: 150px;
-  margin-bottom: 150px;
-}
-
-.mm-video-overlay {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background: transparent;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.mm-launch-container {
-  margin-top: 100px;
-}
-
-.mm-launch {
-
-  border: none;
-}
-
-.mm-launch-container p {
-  text-align: justify;
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-
-.mm-launch-container h2 {
-  font-size: 50px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  margin-bottom: 20px;
+	margin-top: -30px;
 }
 
 .dropper {
     transition: top 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f20548; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f20548; 
+}
+
+.intro-text-box .xeveris-color {
+	font-size: 18px !important;
+}
+
+.separator {
+	border: 1px solid #ff8e8e8f;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.card {
+	background-color: transparent;
+	border: none;
+}
+
+.card p {
+	color: #b1b1b1;
+	font-size: 14px;
+}
+
+.card small {
+	font-size: 16px;
+}
+.demo-featured {
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
