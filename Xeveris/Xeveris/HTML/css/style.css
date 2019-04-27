@@ -47,7 +47,10 @@ h4 {
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 17px;
+	line-height: 1.6;
+	font-weight: 500;
+	color: #252525;
 }
 
 h6 {
@@ -1644,3 +1647,4 @@ figure {
 	-o-transform: translateX(-50%) translateY(-50%) scale(1.2);
 	transform: translateX(-50%) translateY(-50%) scale(1.2);
 }
+
