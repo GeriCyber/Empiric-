@@ -12,7 +12,20 @@
 html,
 body {
 	height: 100%;
+
+background: #501755;
+	/* Old browsers */
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #000000 0%, #151514 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: -o-linear-gradient(45deg, #000000 0%, #151514 100%);
+	background: linear-gradient(45deg, #000000  0%, #151514 100%)
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#501755', endColorstr='#2d1854', GradientType=1);
+
+	/*
 	background-image: url("../img/resources/BackgroundPageTop.png");
+	*/
 	font-family: 'Raleway', serif;
 
 }
@@ -143,7 +156,7 @@ ol {
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: top center;
 }
 
 .spad {
@@ -533,7 +546,6 @@ ol {
 
 .hero-item {
 	height: 100vh;
-	padding-top: 125px;
 	/*border-bottom: 2px solid #a5103d5;*/
 }
 
